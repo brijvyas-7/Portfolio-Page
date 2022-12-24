@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Source+Sans+Pro&family=VT323&display=swap');
+html{
+    background-image: url( background.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed fixed;
+    background-size: cover;
+    font-family: "VT323", monospace;
+    height: 100%;
+    -webkit-user-select: none;
+    transform: rotate(90 deg)
+}
+
+#profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    image-rendering: optimizeQuality;
+    object-fit: cover;
+
+}
+#card{
+    display: block;
+    text-align: center;
+    border: 1 px solid rgba(255,184,126,0.5);
+    border-radius: 8px;
+    width: 30rem;
+    padding: 1rem;
+    margin: 5rem auto;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blure(2px);
+    box-shadow: 0 0 .25rem rgba(255, 130, 130, 0.5), -.125rem -.125rem 1rem rgba(255, 142, 29, 0.5), .125rem .125rem 1rem rgba(255, 25, 17, 0.5);
+}
+#name{
+    font-family: 'lemon milk';
+    font-size: 32px;
+    background: -webkit-linear-gradient(0deg,white 0%,rgba(254,131,25,1) 35%, rgba(255,38,9,1)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.3px black;
+}
+#location{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    background: -webkit-linear-gradient(0deg, white 0%, rgb(230,230,230) 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(230, 230, 230);
+}
+#html,#css,#javascript,#react,#bootstrap,#python,#c{
+    display: inline-flex;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.25rem 1rem;
+    margin: 4px;
+    font-size: 18px;
+}
+#html:hover,#css:hover,#javascript:hover,#react:hover,#bootstrap:hover,#python:hover,#c:hover{
+    scale: 1.1;
+    background-color: aliceblue;
+    transition: 0.4s ease-out;
+    color: black;
+}
+#social-caption{
+    color: white;
+    font-size: 20px;
+}
+#caption {
+    color: white;
+    font-size: 20px;
+}
+
+#social{
+    scale: 2.5;
+    margin: 2rem 0;
+
+}
+#github,#linkdin,#instagram{
+    color: white;
+    padding: 0 rem 0.25rem;
+    padding: 3px;
+}
+#github:hover,#linkdin:hover,#instagram:hover{
+    scale: 1.1;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+@media (max-width:700px){
+   #card{
+    justify-content: center;
+    width: auto;
+    margin: 1rem 2rem;
+    overflow: hidden;
+   }
+   html{
+    height: 100%;
+   }
+}
